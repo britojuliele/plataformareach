@@ -1,0 +1,27 @@
+
+.primary, .main-menu .navbar-header .navbar-brand .brand-text, .header-navbar .navbar-container ul.nav li i.ficon, .text-primary { color: #FF710F !important; }
+
+.border-primary { border: 1px solid #FF710F !important; }
+
+.bg-primary {background-color: #FF710F !important; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Montserrat", Helvetica, Arial, serif; color: #57575;}
+
+.btn-primary { border-color: #ef8903 !important; background-color: #FF710F !important; }
+
+.btn-primary.glow { box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) !important; }
+
+.btn-primary:hover, .btn-primary.hover { background-color: #ef8903 !important; }
+
+.responsive-inline-frame {max-width: 100%; /* 800x450 (16x9 aspect ratio) */ margin: auto; }
+.responsive-inline-frame-inner {width: 100%; position: relative; overflow: hidden; padding-top: 56.25%; height: 0; }
+.responsive-inline-frame-inner iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.google-data-studio::after {content: ''; background: #f2f4f4; width: 100%; height: 30px; position: absolute; bottom: 0; }
+
+.main-menu.menu-light .navigation > li ul .active { background: transparent;color: #fc960f !IMPORTANT; }
+
+.main-menu.menu-light .navigation > li.nav-item.open > a i, .main-menu.menu-light .navigation > li.nav-item.sidebar-group-active > a i, .main-menu.menu-light .navigation > li ul .active > a {color: #fc960f !important; }
+
+.main-menu.menu-light .navigation li a {color: #757575; }
+
+label {text-transform: none;}
