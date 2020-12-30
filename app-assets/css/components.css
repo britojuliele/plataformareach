@@ -425,9 +425,10 @@ body.footer-hidden footer {
 
 .main-menu.menu-light .navigation .navigation-header {
   color: #bac0c7;
-  margin: calc(2.2rem - 0.5rem) 0 0.5rem 1.8rem;
   padding: 0;
   letter-spacing: 1px;
+  margin-top: 20px !important;
+  margin-left: 28px !important;
 }
 
 .main-menu.menu-light .navigation li.has-sub ul {
@@ -499,7 +500,7 @@ body.footer-hidden footer {
 
 .main-menu.menu-light .navigation > li.active:not(.sidebar-group-active) > a {
   background: rgba(90, 141, 238, 0.15);
-  color: #5A8DEE;
+  color: #fc960f;
   border-radius: 0.267rem;
 }
 
