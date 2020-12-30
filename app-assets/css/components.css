@@ -753,11 +753,12 @@ body.footer-hidden footer {
 }
 
 .main-menu .navbar-header .navbar-brand .brand-logo .logo {
-  height: 26px;
+  height: 57px;
   display: flex;
   position: relative;
-  left: 6px;
+  left: -3px;
 }
+
 
 .main-menu .navbar-header .navbar-brand .brand-text {
   color: #5A8DEE;
