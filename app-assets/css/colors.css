@@ -37,6 +37,10 @@
 
 /* Background color */
 /* ---------------- */
+
+.resize-triggers {
+  display: none;
+}
 .bg-white {
   background-color: #FFFFFF !important;
 }
@@ -1560,7 +1564,7 @@ input:focus ~ .bg-primary {
 /* Text color */
 /* ---------- */
 .primary {
-  color: #5A8DEE !important;
+  color: #fc960f !important;
 }
 
 /* text with light primary */
@@ -1571,7 +1575,7 @@ input:focus ~ .bg-primary {
 /* Background color */
 /* ---------------- */
 .bg-primary {
-  background-color: #5A8DEE !important;
+  background-color: #fc960f !important;
 }
 
 .bg-primary .card-header,
@@ -1585,17 +1589,17 @@ input:focus ~ .bg-primary {
 }
 
 .bg-rgba-primary.alert {
-  color: #5A8DEE;
+  color: #fc960f;
 }
 
 .bg-rgba-primary.alert.alert-dismissible .close {
-  color: #5A8DEE;
+  color: #fc960f;
 }
 
 /* Alert primary */
 /* ---------------- */
 .alert.alert-primary {
-  background: #5A8DEE !important;
+  background: #fc960f !important;
   color: #fff !important;
   box-shadow: 0 3px 8px 0 rgba(90, 141, 238, 0.4);
   border: none;
@@ -1604,68 +1608,68 @@ input:focus ~ .bg-primary {
 /* Border primary */
 /* ---------------- */
 .border-primary {
-  border: 1px solid #5A8DEE !important;
+  border: 1px solid #fc960f !important;
 }
 
 .border-primary .select2-selection__arrow b {
-  border-color: #2c6de9 !important;
+  border-color: #fc960f !important;
 }
 
 .border-primary.alert {
-  color: #5A8DEE;
+  color: #fc960f;
 }
 
 .border-primary.alert.alert-dismissible .close {
-  color: #5A8DEE;
+  color: #fc960f;
 }
 
 .border-top-primary {
-  border-top: 1px solid #5A8DEE;
+  border-top: 1px solid #fc960f;
 }
 
 .border-bottom-primary {
-  border-bottom: 1px solid #5A8DEE;
+  border-bottom: 1px solid #fc960f;
 }
 
 .border-left-primary {
-  border-left: 1px solid #5A8DEE;
+  border-left: 1px solid #fc960f;
 }
 
 .border-right-primary {
-  border-right: 1px solid #5A8DEE;
+  border-right: 1px solid #fc960f;
 }
 
 /* Navbar icon stroke color according to bg color */
 .header-navbar.bg-primary .navbar-nav .nav-item > a i {
-  -webkit-text-stroke: 0.2px #5A8DEE !important;
+  -webkit-text-stroke: 0.2px #fc960f !important;
 }
 
 /* Badges */
 /* ------ */
 .badge.badge-primary {
-  background-color: #5A8DEE;
+  background-color: #fc960f;
 }
 
 .badge.badge-light-primary {
-  background-color: #E2ECFF;
-  color: #5A8DEE !important;
+  background-color: #f5f5f5;
+  color: #fc960f !important;
 }
 
 .badge.bg-primary.badge-glow, .badge.border-primary.badge-glow, .badge.badge-primary.badge-glow {
-  box-shadow: 0px 0px 10px #5A8DEE;
+  box-shadow: 0px 0px 10px #fc960f;
 }
 
 .badge-circle-primary {
-  background-color: #5A8DEE;
+  background-color: #fc960f;
 }
 
 .badge-circle-light-primary {
   background-color: #E2ECFF;
-  color: #5A8DEE;
+  color: #fc960f;
 }
 
 .overlay-primary {
-  background: #5A8DEE;
+  background: #fc960f;
   background: rgba(90, 141, 238, 0.6);
 }
 
@@ -1673,7 +1677,7 @@ input:focus ~ .bg-primary {
 /* ------------- */
 .btn-primary {
   border-color: #2c6de9 !important;
-  background-color: #5A8DEE !important;
+  background-color: #fc960f !important;
   color: #fff;
 }
 
@@ -1701,7 +1705,7 @@ input:focus ~ .bg-primary {
 
 .btn-light-primary {
   background-color: #E2ECFF;
-  color: #5A8DEE !important;
+  color: #fc960f !important;
 }
 
 .btn-light-primary:hover, .btn-light-primary.hover {
@@ -1716,9 +1720,9 @@ input:focus ~ .bg-primary {
 
 /* Outline buttons */
 .btn-outline-primary {
-  border: 1px solid #5A8DEE;
+  border: 1px solid #fc960f;
   background-color: transparent;
-  color: #5A8DEE !important;
+  color: #fc960f !important;
 }
 
 .btn-outline-primary:hover, .btn-outline-primary.hover {
@@ -1734,7 +1738,7 @@ input:focus ~ .bg-primary {
 /* Dropdowns */
 /* --------- */
 .btn-primary ~ .dropdown-menu .dropdown-item.active, .btn-outline-primary ~ .dropdown-menu .dropdown-item.active {
-  background-color: #5A8DEE;
+  background-color: #fc960f;
   color: #fff;
 }
 
@@ -1749,7 +1753,7 @@ input:focus ~ .bg-primary {
 .dropright.dropdown-icon-wrapper .btn-outline-primary ~ .dropdown-menu .dropdown-item:hover i,
 .dropleft.dropdown-icon-wrapper .btn-primary ~ .dropdown-menu .dropdown-item:hover i,
 .dropleft.dropdown-icon-wrapper .btn-outline-primary ~ .dropdown-menu .dropdown-item:hover i {
-  color: #5A8DEE;
+  color: #fc960f;
 }
 
 .dropdown.dropdown-icon-wrapper .btn-primary ~ .dropdown-menu .dropdown-item:active i, .dropdown.dropdown-icon-wrapper .btn-outline-primary ~ .dropdown-menu .dropdown-item:active i,
@@ -1764,13 +1768,13 @@ input:focus ~ .bg-primary {
 
 /* Bullet primary */
 .bullet.bullet-primary {
-  background-color: #5A8DEE;
+  background-color: #fc960f;
 }
 
 /* For Pagination */
 /* -------------- */
 .pagination-primary .page-item.active .page-link, .pagination-primary .page-item.active .page-link:hover {
-  background: #5A8DEE !important;
+  background: #fc960f !important;
   color: #fff;
 }
 
@@ -1779,24 +1783,24 @@ input:focus ~ .bg-primary {
 }
 
 .pagination-primary .page-item.previous .page-link, .pagination-primary .page-item.next .page-link {
-  color: #5A8DEE;
+  color: #fc960f;
 }
 
 .pagination-primary .page-item.previous .page-link:hover, .pagination-primary .page-item.next .page-link:hover {
-  background: #5A8DEE;
+  background: #fc960f;
 }
 
 /* Progress Bars primary */
 /* ---------------------- */
 .progress-bar-primary .progress-bar {
-  background-color: #5A8DEE;
+  background-color: #fc960f;
   box-shadow: 0 2px 6px 0 rgba(90, 141, 238, 0.6);
 }
 
 /* Chips primary */
 /* ---------------- */
 .chip-primary {
-  background-color: #5A8DEE !important;
+  background-color: #fc960f !important;
 }
 
 .chip-primary .chip-body {
@@ -1806,24 +1810,24 @@ input:focus ~ .bg-primary {
 /* Divider primary */
 /* ---------------*/
 .divider.divider-primary .divider-text:before, .divider.divider-primary .divider-text:after {
-  border-color: #5A8DEE !important;
+  border-color: #fc960f !important;
 }
 
 /* timeline */
 .widget-timeline li.timeline-items.timeline-icon-primary:before {
-  background: #5A8DEE !important;
+  background: #fc960f !important;
 }
 
 /* Custom Checkbox & Radio - Colored */
 /* --------------------------------- */
 input[type="checkbox"].bg-primary + .custom-control-label:before, input[type="radio"].bg-primary + .custom-control-label:before {
-  background-color: #5A8DEE !important;
+  background-color: #fc960f !important;
   border-color: #2c6de9 !important;
 }
 
 .checkbox.checkbox-primary input:checked ~ label::before, .checkbox.radio-primary input:checked ~ label::before, .radio.checkbox-primary input:checked ~ label::before, .radio.radio-primary input:checked ~ label::before {
-  background-color: #5A8DEE;
-  border-color: #5A8DEE;
+  background-color: #fc960f;
+  border-color: #fc960f;
 }
 
 .checkbox.checkbox-primary input:checked ~ label::after, .checkbox.radio-primary input:checked ~ label::after, .radio.checkbox-primary input:checked ~ label::after, .radio.radio-primary input:checked ~ label::after {
@@ -1850,7 +1854,7 @@ input[type="checkbox"].bg-primary + .custom-control-label:before, input[type="ra
 /* Bootstrap Custom Switches */
 /* ------------------------- */
 .custom-switch-primary .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #5A8DEE !important;
+  background-color: #fc960f !important;
   color: #fff;
   transition: all .2s ease-out;
 }
@@ -1868,18 +1872,18 @@ input[type="checkbox"].bg-primary + .custom-control-label:before, input[type="ra
 /* Scrumboard Application - kanban-item with coloured border */
 /* --------------------------------------------------------- */
 .kanban-container .kanban-board .kanban-item[data-border=primary]:before {
-  background-color: #5A8DEE;
+  background-color: #fc960f;
 }
 
 .edit-kanban-item select option.bg-color_name {
-  background-color: #5A8DEE;
+  background-color: #fc960f;
 }
 
 /* Select2 primary */
 /* ---------------*/
 select.select-light-primary ~ .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice, select.select-light-primary ~ .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice__remove {
   background-color: #E2ECFF !important;
-  color: #5A8DEE !important;
+  color: #fc960f !important;
 }
 
 .primary.darken-1 {
@@ -2970,8 +2974,8 @@ input:focus ~ .bg-secondary {
 /* Progress Bars secondary */
 /* ---------------------- */
 .progress-bar-secondary .progress-bar {
-  background-color: #475F7B;
-  box-shadow: 0 2px 6px 0 rgba(71, 95, 123, 0.6);
+  background-color: #666667;
+  box-shadow: 0 2px 4px 0 rgba(71, 95, 123, 0.6);
 }
 
 /* Chips secondary */
@@ -6051,7 +6055,7 @@ input:focus ~ .bg-warning {
 /* Background color */
 /* ---------------- */
 .bg-warning {
-  background-color: #FDAC41 !important;
+  background-color: #FFEED9  !important;
 }
 
 .bg-warning .card-header,
@@ -7304,8 +7308,8 @@ input:focus ~ .bg-danger {
 /* Badges */
 /* ------ */
 .badge.badge-danger {
-  background-color: #FF5B5C;
-}
+  background-color: #757575;
+  color: #fff !important;}
 
 .badge.badge-light-danger {
   background-color: #FFDEDE;
@@ -7538,6 +7542,7 @@ input[type="checkbox"].bg-danger + .custom-control-label:before, input[type="rad
 
 /* Select2 danger */
 /* ---------------*/
+
 select.select-light-danger ~ .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice, select.select-light-danger ~ .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice__remove {
   background-color: #FFDEDE !important;
   color: #FF5B5C !important;
@@ -7815,6 +7820,10 @@ input:focus ~ .bg-danger {
   color: #FFEEF1 !important;
 }
 
+.apexcharts-toolbar {
+    display: none !important;
+}
+
 .btn-outline-danger.btn-outline-accent-1:hover {
   background-color: #FFEEF1 !important;
 }
@@ -8090,4 +8099,9 @@ input:focus ~ .bg-danger {
 .overlay-danger.overlay-light {
   background: #FFDEDE;
   background: rgba(255, 222, 222, 0.6);
+}
+
+
+.bg-grey {
+  background-color: #F6F8F9;
 }

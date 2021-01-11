@@ -147,13 +147,13 @@ sup {
 }
 
 a {
-  color: #5A8DEE;
+  color: #fc960f;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #175ee4;
+  color: #fc960f;
   text-decoration: none;
 }
 
@@ -357,9 +357,9 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: "Rubik", Helvetica, Arial, serif;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.2;
-  color: #475F7B;
+  color: #666667;
 }
 
 h1, .h1 {
@@ -6138,7 +6138,7 @@ a.close.disabled {
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #2c6de9 !important;
+  background-color: #757575 !important;
 }
 
 .bg-secondary {
