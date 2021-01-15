@@ -38,6 +38,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <style>
+
+        @media (min-width: 1199px) {
+        .nav-footer {width: calc(83%) !important;}
+        }
+
+        .nav-footer {width: 100%;bottom: 0;right: 0;position: fixed;}
+    </style>
     <!-- END: Custom CSS-->
 
 </head>
@@ -199,10 +207,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </nav>
     <!-- END: Header-->
-
-
- <!-- BEGIN: Main Menu-->
- <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+   <!-- BEGIN: Main Menu-->
+<div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
     <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">
             <li class="nav-item mr-auto"><a class="navbar-brand" href="index.html">
@@ -231,8 +237,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         </ul>
             </li>
+            <li class="adstore active"><a href="escolha-midia.html"><i class="bx bxs-cart"></i><span class="menu-item">Adstore</span></a></li>
 
- <li class="adstore"><a href="escolha-midia.html"><i class="bx bxs-cart"></i><span class="menu-item">Adstore</span></a></li>
             <li class="navigation-header">DIGITALIZAÇÃO DE VENDAS</span> </li>
             <li class="nav-item has-sub">
                 <a href="#"><i class="bx bx-spreadsheet"></i><span class="menu-title" data-i18n="Menu Levels">Campanhas/Canais</span></a>
@@ -243,9 +249,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <li class="dv-email"><a href="dv-canais-email.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">E-mail</span></a></li>
                     <li class="dv-formulario"><a href="dv-canais-formularios.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Formulários</span></a></li>  </ul>
               </li>
-              <li class="nav-item has-sub sidebar-group open"><a href="#"><i class="bx bx-group"></i><span class="menu-title" data-i18n="Menu Levels">Equipe de vendas</span></a>
+              <li class="nav-item has-sub sidebar-group"><a href="#"><i class="bx bx-group"></i><span class="menu-title" data-i18n="Menu Levels">Equipe de vendas</span></a>
                 <ul class="menu-content" style="">
-                    <li class="dv-equipe-pabx active"><a href="dv-equipe-pabx.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">PABX</span></a></li>
+                    <li class="dv-equipe-pabx"><a href="dv-equipe-pabx.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">PABX</span></a></li>
                     <li class="dv-equipe-email"><a href="dv-equipe-email.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">E-mail</span></a></li>
                     <li class="dv-equipe-whatsapp.html"><a href="dv-equipe-whatsapp.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">WhatsApp</span></a></li>
                     <li class="dv-equipe-video.html"><a href="dv-equipe-video.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Vídeo </span></a></li>    </ul></li>
@@ -285,19 +291,109 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <!-- END: Main Menu-->
 
-
-
     <!-- BEGIN: Content-->
     <div class="app-content content">
         <div class="content-overlay"></div>
+                                   
         <div class="content-wrapper">
-            <div class="content-header row" id="ligacoes">
-                <iframe width="100%" src="https://datastudio.google.com/embed/reporting/79523114-d809-4a16-a2a8-203185f2671f/page/frALB" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="content-header row"></div>
+            <div class="content-body mb-5 pb-5">
+                <section>
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <h1 class="h4 mb-3 font-weight-bolder">Adstore</h1>
+                            <div class="d-flex flex-row justify-content-start justify-content-md-between align-items-center py-2 px-1 rounded-pill bg-white shadow-sm">
+                                <div class="d-none d-md-block"><a href="escolha-midia.html"><span class="border-primary primary p-1 rounded-circle mr-1 shadow">01</span>Mídia</a></div>
+                                <div class="d-none d-md-block"><a href="escolha-anuncio.html"><span class="border-primary primary p-1 rounded-circle mr-1 shadow">02</span>Tipo de Anúncio</a></div>
+                                <div class="font-weight-bolder"><a href="escolha-franquia.html"><span class="border-primary bg-primary white p-1 rounded-circle mr-1 shadow">03</span>Unidades</a></div>
+                                <div class="d-none d-md-block"><a href="escolha-orcamento.html"><span class="border-primary primary p-1 rounded-circle mr-1 shadow">04</span>Orçamento</a></div>
+                                <div class="d-none d-md-block"><a href="escolha-pagamento.html"><span class="border-primary primary p-1 rounded-circle mr-1 shadow">05</span>Pagamento</a></div>
+                                <div class="d-none d-md-block"><a href="conclusao-pedido.html"><span class="border-primary primary p-1 rounded-circle mr-1 shadow">06</span>Conclusão</a></div>
+                            </div>                            
+                        </div>
+                    </div>
 
+                    <h2 class="h5 mb-2">Escolha a Unidade</h2>
 
+                    <div class="row">
+
+                        <div class="col-12">
+
+                            <div class="table-responsive">
+                                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap4"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="DataTables_Table_0_length"><label>Mostrando <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> unidades por página</label></div></div><div class="col-sm-12 col-md-6"><div id="DataTables_Table_0_filter" class="dataTables_filter"><label>Pesquisar:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="DataTables_Table_0"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-striped border table-hover shadow-sm dataTable" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+                                    <thead>
+                                        <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Selecionar: activate to sort column descending" style="width: 137.6px;">Selecionar</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Nome da Unidade: activate to sort column ascending" style="width: 340.8px;">Nome da Unidade</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CNPJ/CPF: activate to sort column ascending" style="width: 202.4px;">CNPJ/CPF</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Filial: activate to sort column ascending" style="width: 180.8px;">Filial</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Cidade: activate to sort column ascending" style="width: 136px;">Cidade</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Estado: activate to sort column ascending" style="width: 93.6px;">Estado</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                        
+                                        
+                                    <tr role="row" class="odd">
+                                            <td class="sorting_1">
+                                                <div class="custom-control custom-switch custom-switch-success">
+                                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                    <label class="custom-control-label" for="customSwitch1">
+                                                        <span class="switch-icon-left"><i class="bx bx-check"></i></span>
+                                                        <span class="switch-icon-right"><i class="bx bx-check"></i></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="text-bold-600">REPUBLICA TEATRO MUNICIPAL</td>
+                                            <td>453.893.028-85</td>
+                                            <td>SAO PAULO SUL</td>
+                                            <td>SÃO PAULO</td>
+                                            <td>SP</td>
+                                        </tr><tr role="row" class="even">
+                                            <td class="sorting_1">
+                                                <div class="custom-control custom-switch custom-switch-success">
+                                                    <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                                    <label class="custom-control-label" for="customSwitch2">
+                                                        <span class="switch-icon-left"><i class="bx bx-check"></i></span>
+                                                        <span class="switch-icon-right"><i class="bx bx-check"></i></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="text-bold-600">LUZ/SP</td>
+                                            <td>046.095.828-30</td>
+                                            <td>SAO PAULO SUL</td>
+                                            <td>SÃO PAULO</td>
+                                            <td>SP</td>
+                                        </tr><tr role="row" class="odd">
+                                            <td class="sorting_1">
+                                                <div class="custom-control custom-switch custom-switch-success">
+                                                    <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                                    <label class="custom-control-label" for="customSwitch3">
+                                                        <span class="switch-icon-left"><i class="bx bx-check"></i></span>
+                                                        <span class="switch-icon-right"><i class="bx bx-check"></i></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="text-bold-600">SANTA CECILIA-ANGELICA/SP</td>
+                                            <td>18.789.001/0001-22</td>
+                                            <td>SAO PAULO SUL</td>
+                                            <td>SÃO PAULO</td>
+                                            <td>SP</td>
+                                        </tr></tbody>
+                                    <tfoot>
+                                        <tr><th rowspan="1" colspan="1">Selecionar</th><th rowspan="1" colspan="1">Nome da Unidade</th><th rowspan="1" colspan="1">CNPJ/CPF</th><th rowspan="1" colspan="1">Filial</th><th rowspan="1" colspan="1">Cidade</th><th rowspan="1" colspan="1">Estado</th></tr>
+                                    </tfoot>
+                                </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Mostrando página 1 de 1</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="DataTables_Table_0_previous"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" class="page-link">Anterior</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="DataTables_Table_0_next"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0" class="page-link">Próxima</a></li></ul></div></div></div></div>
+                            </div>
+
+                        </div>
+                        
+                      
+                    
+                    </div>
+                    <div class="d-flex flex-row justify-content-start justify-content-md-between align-items-center py-2 px-1 rounded-pill bg-white shadow-sm mt-3">
+                        <a href="escolha-anuncio.html" class="btn btn-outline-primary round shadow">Retornar</a>
+                        <a href="escolha-orcamento.html" class="btn btn-primary round shadow">Avançar</a>
+                    </div>
+                </section>
             </div>
-            <div class="content-body">
-
+        </div>
+        
+            </div>
             </div>
         </div>
     </div>

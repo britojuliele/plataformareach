@@ -38,6 +38,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <style>
+
+        @media (min-width: 1199px) {
+        .nav-footer {width: calc(100%) !important;}
+        }
+
+        .nav-footer {width: 100%;bottom: 0;right: 0;position: fixed;}
+    </style>
     <!-- END: Custom CSS-->
 
 </head>
@@ -199,10 +207,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </nav>
     <!-- END: Header-->
-
-
- <!-- BEGIN: Main Menu-->
- <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+   <!-- BEGIN: Main Menu-->
+<div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
     <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">
             <li class="nav-item mr-auto"><a class="navbar-brand" href="index.html">
@@ -231,8 +237,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         </ul>
             </li>
+            <li class="adstore active"><a href="escolha-midia.html"><i class="bx bxs-cart"></i><span class="menu-item">Adstore</span></a></li>
 
- <li class="adstore"><a href="escolha-midia.html"><i class="bx bxs-cart"></i><span class="menu-item">Adstore</span></a></li>
             <li class="navigation-header">DIGITALIZAÇÃO DE VENDAS</span> </li>
             <li class="nav-item has-sub">
                 <a href="#"><i class="bx bx-spreadsheet"></i><span class="menu-title" data-i18n="Menu Levels">Campanhas/Canais</span></a>
@@ -243,9 +249,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <li class="dv-email"><a href="dv-canais-email.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">E-mail</span></a></li>
                     <li class="dv-formulario"><a href="dv-canais-formularios.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Formulários</span></a></li>  </ul>
               </li>
-              <li class="nav-item has-sub sidebar-group open"><a href="#"><i class="bx bx-group"></i><span class="menu-title" data-i18n="Menu Levels">Equipe de vendas</span></a>
+              <li class="nav-item has-sub sidebar-group"><a href="#"><i class="bx bx-group"></i><span class="menu-title" data-i18n="Menu Levels">Equipe de vendas</span></a>
                 <ul class="menu-content" style="">
-                    <li class="dv-equipe-pabx active"><a href="dv-equipe-pabx.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">PABX</span></a></li>
+                    <li class="dv-equipe-pabx"><a href="dv-equipe-pabx.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">PABX</span></a></li>
                     <li class="dv-equipe-email"><a href="dv-equipe-email.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">E-mail</span></a></li>
                     <li class="dv-equipe-whatsapp.html"><a href="dv-equipe-whatsapp.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">WhatsApp</span></a></li>
                     <li class="dv-equipe-video.html"><a href="dv-equipe-video.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Vídeo </span></a></li>    </ul></li>
@@ -285,19 +291,124 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <!-- END: Main Menu-->
 
-
-
     <!-- BEGIN: Content-->
     <div class="app-content content">
         <div class="content-overlay"></div>
-        <div class="content-wrapper">
-            <div class="content-header row" id="ligacoes">
-                <iframe width="100%" src="https://datastudio.google.com/embed/reporting/79523114-d809-4a16-a2a8-203185f2671f/page/frALB" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                   
+            <div class="content-wrapper">
+                <div class="content-header row"></div>
+                <div class="content-body mb-5 pb-5">
+                    <section>
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <h1 class="h4 mb-3 font-weight-bolder">Adstore</h1>
+                                <div class="d-flex flex-row justify-content-start justify-content-md-between align-items-center py-2 px-1 rounded-pill bg-white shadow-sm">
+                                    <div class="d-none d-md-block"><a href="escolha-midia.html"><span class="border-primary primary p-1 rounded-circle mr-1 shadow">01</span>Mídia</a></div>
+                                    <div class="font-weight-bolder"><a href="escolha-anuncio.html"><span class="border-primary bg-primary white p-1 rounded-circle mr-1 shadow">02</span>Tipo de Anúncio</a></div>
+                                    <div class="d-none d-md-block"><a href="escolha-franquia.html"><span class="border-primary primary p-1 rounded-circle mr-1 shadow">03</span>Franquias</a></div>
+                                    <div class="d-none d-md-block"><a href="escolha-orcamento.html"><span class="border-primary primary p-1 rounded-circle mr-1 shadow">04</span>Orçamento</a></div>
+                                    <div class="d-none d-md-block"><a href="escolha-pagamento.html"><span class="border-primary primary p-1 rounded-circle mr-1 shadow">05</span>Pagamento</a></div>
+                                    <div class="d-none d-md-block"><a href="conclusao-pedido.html"><span class="border-primary primary p-1 rounded-circle mr-1 shadow">06</span>Conclusão</a></div>
+                                </div>                            
+                            </div>
+                        </div>
+    
+                        <h2 class="h5 mb-2">Escolha seus Anúncios de Google Search</h2>
+    
+                        <div class="row mt-2 match-height" >
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="row no-gutters">
+                                            <div class="card-body p-1">
+                                                <p class="card-text">
+                                                    <span class="text-bold-600">Transcrição de Áudio - Digitalize sua Equipe de Vendas</span><br>
+                                                    Digitalize o seu vendedor e transforme a experiência do cliente, com nosso software Inteligente de Transcrição de Áudio para Texto Preciso e Rápido! </p>
+                                                <fieldset>
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" class="checkbox-input" id="checkbox1">
+                                                        <label for="checkbox1">Escolher este anúncio</label>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="row no-gutters">
+                                            <div class="card-body p-1">
+                                                <p class="card-text">
+                                                    <span class="text-bold-600">Quer vender muito mais com campanhas digitais?</span><br>
+                                                   Atraia  +  clientes com a estratégia de  marketing feita para o seu negócio! Comece agora a digitaizar sua empresa com as melhores estraégias. 
+                                                </p>
+                                                <fieldset>
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" class="checkbox-input" id="checkbox2">
+                                                        <label for="checkbox2">Escolher este anúncio</label>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="row no-gutters">
+                                            <div class="card-body p-1">
+                                                <p class="card-text">
+                                                    <span class="text-bold-600">Quer saber o que está sendo dito em milhares de ligações sem precisar ouvi-las? 
+                                                    </span><br>
+                                                    Com a plataforma de inteligência em voz e vídeo nós transformamos dados não estruturados de conversas em informações que alimentam decisões mais inteligentes e melhoram o desempenho do seu negócio.
 
+                                               </p>
+                                                <fieldset>
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" class="checkbox-input" id="checkbox3">
+                                                        <label for="checkbox3">Escolher este anúncio</label>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="row no-gutters">
+                                            <div class="card-body p-1">
+                                                <p class="card-text">
+                                                    <span class="text-bold-600"> Quer proporcionar um atendimento de qualidade e que encante todos os seus clientes? 
+                                                    </span><br>
+                                                    Nossa plataforma envolve desde o PABX virtual com toda a estrutura de ramais e mobilidade, o monitoramento das conversas, transcrição de voz para texto e o dashboard unificado com todas as interações entre seu time e os clientes. 
 
+                                                </p>
+                                                <fieldset>
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" class="checkbox-input" id="checkbox4">
+                                                        <label for="checkbox4">Escolher este anúncio</label>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                             
+                            </div>
+                            <div class="col d-flex flex-row justify-content-start justify-content-md-between align-items-center py-2 px-1 rounded-pill bg-white shadow-sm">
+                                <a href="escolha-midia.html" class="btn btn-outline-primary round shadow">Retornar</a>
+                                <a href="escolha-franquia.html" class="btn btn-primary round shadow">Avançar</a>
+                            </div>
+                    </section>
+                </div>
             </div>
-            <div class="content-body">
-
             </div>
         </div>
     </div>
