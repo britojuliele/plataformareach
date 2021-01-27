@@ -41,7 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <style>
 
         @media (min-width: 1199px) {
-        .nav-footer {width: calc(83%) !important;}
+        .nav-footer {width: calc(100%) !important;}
         }
 
         .nav-footer {width: 100%;bottom: 0;right: 0;position: fixed;}
@@ -237,8 +237,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         </ul>
             </li>
+
             <li class="adstore active"><a href="escolha-midia.html"><i class="bx bxs-cart"></i><span class="menu-item">Adstore</span></a></li>
-          
+
             <li class="navigation-header">DIGITALIZAÇÃO DE VENDAS</span> </li>
             <li class="nav-item has-sub">
                 <a href="#"><i class="bx bx-spreadsheet"></i><span class="menu-title" data-i18n="Menu Levels">Campanhas/Canais</span></a>
@@ -296,7 +297,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="content-overlay"></div>
         <div class="content-wrapper">
             <div class="content-header row"></div>
-            <div class="content-body">
+            <div class="content-body mb-5 pb-5">
                 <section>
                     <div class="row mb-3">
                         <div class="col-12">
@@ -306,28 +307,122 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <div class="d-none d-md-block"><a href="escolha-anuncio.html"><span class="border-primary primary p-1 rounded-circle mr-1 shadow">02</span>Tipo de Anúncio</a></div>
                                 <div class="d-none d-md-block"><a href="escolha-franquia.html"><span class="border-primary primary p-1 rounded-circle mr-1 shadow">03</span>Unidades</a></div>
                                 <div class="d-none d-md-block"><a href="escolha-orcamento.html"><span class="border-primary primary p-1 rounded-circle mr-1 shadow">04</span>Orçamento</a></div>
-                                <div class="d-none d-md-block"><a href="escolha-pagamento.html"><span class="border-primary primary p-1 rounded-circle mr-1 shadow">05</span>Pagamento</a></div>
-                                <div class="font-weight-bolder"><a href="conclusao-pedido.html"><span class="border-primary bg-primary white p-1 rounded-circle mr-1 shadow">06</span>Conclusão</a></div>
+                                <div class="font-weight-bolder"><a href="escolha-pagamento.html"><span class="border-primary bg-primary white p-1 rounded-circle mr-1 shadow">05</span>Pagamento</a></div>
+                                <div class="d-none d-md-block"><a href="conclusao-pedido.html"><span class="border-primary primary p-1 rounded-circle mr-1 shadow">06</span>Conclusão</a></div>
                             </div>                            
                         </div>
                     </div>
 
+                    <h2 class="h4 mb-2 text-center">Escolha sua forma de pagamento</h2>
+
                     <div class="row">
 
-                        <div class="col-6 mx-auto pt-3">
+                        <div class="col-12 col-sm-8 mx-auto bg-white p-1 rounded shadow-sm">
+                            <ul class="nav nav-tabs justify-content-center" id="myTab2" role="tablist">
+                                <li class="nav-item current">
+                                    <a class="nav-link active" id="home-tab-justified" data-toggle="tab" href="#cartao-credito" role="tab" aria-controls="home-just" aria-selected="true">
+                                        Cartão de Crédito
+                                    </a>
+                                </li>
+                                <li class="nav-item mr-0">
+                                    <a class="nav-link" id="profile-tab-justified" data-toggle="tab" href="#boleto" role="tab" aria-controls="profile-just" aria-selected="true">
+                                        Boleto Bancário
+                                    </a>
+                                </li>
+                            </ul>
 
-                            <div class="alert alert-success mb-2 text-center font-medium-3" role="alert">
-                                <h3 class="white text-bold-700">Obrigado pela compra!</h3>
-                                <p>Seu pedido foi gerado com sucesso.</p>
+                            <div class="tab-content pt-1 text-center px-1">
+                                <div class="tab-pane active" id="cartao-credito" role="tabpanel" aria-labelledby="home-tab-justified">
+                                    <h6>SELECIONE A BANDEIRA DO CARTÃO</h6>
+                                    <img src="../app-assets/images/adstore/bandeiras.png" width="60%">
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <p class="text-left mb-0">Nome do Titular do Cartão</p>
+                                            <fieldset class="form-group position-relative has-icon-left">
+                                                <input type="text" class="form-control" id="iconLeft1" placeholder="Informe como está no cartão.">
+                                                <div class="form-control-position">
+                                                    <i class="bx bx-user"></i>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <p class="text-left mb-0">CPF do Titular do Cartão</p>
+                                            <fieldset class="form-group position-relative has-icon-left">
+                                                <input type="text" class="form-control" id="iconLeft1" placeholder="___.___.___-__">
+                                                <div class="form-control-position">
+                                                    <i class="bx bx-user"></i>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <p class="text-left mb-0">Número do Cartão</p>
+                                            <fieldset class="form-group position-relative has-icon-left">
+                                                <input type="text" class="form-control" id="iconLeft1" placeholder="____ ____ ____ ____">
+                                                <div class="form-control-position">
+                                                    <i class="bx bx-credit-card"></i>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-12 col-sm-3">
+                                            <p class="text-left mb-0">Validade do Cartão</p>
+                                            <fieldset class="form-group position-relative has-icon-left">
+                                                <input type="text" class="form-control" id="iconLeft1" placeholder="__/__">
+                                                <div class="form-control-position">
+                                                    <i class="bx bx-credit-card"></i>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-12 col-sm-3">
+                                            <p class="text-left mb-0">Código de Segurança</p>
+                                            <fieldset class="form-group position-relative has-icon-left">
+                                                <input type="text" class="form-control" id="iconLeft1" placeholder="__">
+                                                <div class="form-control-position">
+                                                    <i class="bx bx-credit-card"></i>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <div class="row my-2">
+                                        <div class="col-12">
+                                            <a href="conclusao-pedido.html" class="btn btn-success round shadow">Finalizar Pedido</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane" id="boleto" role="tabpanel" aria-labelledby="profile-tab-justified">
+                                    <div class="row">
+                                        <div class="col-12 text-left">
+                                            <p>
+                                                Chocolate cake icing tiramisu liquorice toffee donut sweet roll cake. Cupcake dessert icing dragée
+                                                dessert. Liquorice jujubes cake tart pie donut. Cotton candy candy canes lollipop liquorice chocolate
+                                                marzipan muffin pie liquorice.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row my-2">
+                                        <div class="col-12">
+                                            <a href="conclusao-pedido.html" class="btn btn-success round shadow">Finalizar Pedido</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                        </div>
 
-                    </div>  
 
+                        </div>                       
+                    
+                    </div>
+                    <div class="d-flex flex-row justify-content-start justify-content-md-between align-items-center py-2 px-1 rounded-pill bg-white shadow-sm mt-3">
+                        <a href="escolha-orcamento.html" class="btn btn-outline-primary round">Retornar</a>
+                    </div>
                 </section>
             </div>
-        </div>
         </div>                           
  
 
