@@ -174,40 +174,7 @@ $(document).ready(function () {
       
     },
 
-    {
-      id: "kanban-board-4",
-      title: "EM NEGOCIAÇÃO",
-      item: [
-        {
-          id: "34",
-          title: "<strong>CAMPANHA FACEBOOK</strong> <br> <strong>NOME:</strong> Luciana Almeida <br><strong>TELEFONE:</strong> (11) 98903-3434 <br>",
-          border: "warning",
-          dueDate: "Motivo",
-          comment: "Solicitou desconto",
-          users: [
-            "../app-assets/images/reach/facebook.png"
-          ]
-        },
-
-        {
-          id: "39",
-          title: "<strong>CAMPANHA ADWORDS</strong> <br> <strong>NOME:</strong> Natália Mendes <br><strong>TELEFONE:</strong> (11) 2323-3334 <br>",
-          border: "success",
-          dueDate: "Motivo",
-          comment: "AGUARDANDO ASSINATURA",
-          users: [
-            "../app-assets/images/reach/adwords.png"
-          ]
-        }  
-        
-        
-        
-      ]     
-      
-      
-    },
-
-    
+     
 
     {
       id: "kanban-board-5",
