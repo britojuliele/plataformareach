@@ -12,107 +12,148 @@ $(document).ready(function () {
   var kanban_curr_el, kanban_curr_item_id, kanban_item_title, kanban_data, kanban_item, kanban_users;
 
   // Kanban Board and Item Data passed by json
-  var kanban_board_data = [{
+ 
+ 
+  var kanban_board_data = [
+    
+    {
       id: "kanban-board-1",
-      title: "Marketing",
+      title: "ENTRADA DE LEADS",
       item: [{
           id: "11",
-          title: "Facebook Campaign 😎",
-          border: "success",
+          title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Carlos Silva <br><strong>TELEFONE:</strong> (11) 2309-2323 <br>",
+          border: "secondary",
           dueDate: "Feb 6",
-          comment: 1,
-          attachment: 3,
           users: [
-            "../app-assets/images/portrait/small/avatar-s-11.jpg",
-            "../app-assets/images/portrait/small/avatar-s-12.jpg"
+            "../app-assets/images/reach/adwords.png",
           ]
         },
-        {
-          id: "12",
-          title: "Type Something",
-          border: "info",
-          image: "../app-assets/images/banner/banner-21.jpg",
-          dueDate: "Feb 10"
-        },
+   
         {
           id: "13",
-          title: "Social Media Graphics",
-          border: "warning",
-          dueDate: "Jan 3",
-          comment: 23,
-          attachment: 4,
+          title: "<strong>CAMPANHA FACEBOOK</strong> <br> <strong>NOME:</strong> Luciana Almeida <br><strong>TELEFONE:</strong> (11) 98903-3434 <br>",
+
+          border: "secondary",
+          dueDate: "Feb 6",
           users: [
-            "../app-assets/images/portrait/small/avatar-s-1.jpg",
-            "../app-assets/images/portrait/small/avatar-s-18.jpg"
+            "../app-assets/images/reach/facebook.png"
           ]
         },
+
         {
           id: "14",
-          title: "Book newspaper ads online in popular newspapers.",
-          border: "danger",
-          comment: 56,
-          attachment: 2,
+          title: "<strong>CAMPANHA FACEBOOK</strong> <br> <strong>NOME:</strong> Marcelo D. <br><strong>TELEFONE:</strong> (11) 98997-7676 <br> ",
+          border: "secondary",
+          dueDate: "Feb 5",
           users: [
-            "../app-assets/images/portrait/small/avatar-s-26.jpg",
-            "../app-assets/images/portrait/small/avatar-s-16.jpg"
+            "../app-assets/images/reach/facebook.png"
           ]
         },
+       
         {
           id: "15",
-          title: "Twitter Marketing",
-          border: "secondary"
-        }
+          title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Juliana Oliveira <br><strong>TELEFONE:</strong> (11) 234-7626 <br>",
+          border: "secondary",
+          dueDate: "Feb 5",
+          users: [
+            "../app-assets/images/reach/adwords.png"
+          ]
+        },
+
+        {
+          id: "16",
+          title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Paulo Silva <br><strong>TELEFONE:</strong> (11) 9734-3434 <br>",
+          border: "secondary",
+          dueDate: "Feb 4",
+          users: [
+            "../app-assets/images/reach/adwords.png"
+          ]
+        },
+        
+        {
+          id: "17",
+          title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Ana <br><strong>TELEFONE:</strong> (11) 9839-3434 <br>",
+          border: "secondary",
+          dueDate: "Feb 3",
+          users: [
+            "../app-assets/images/reach/adwords.png"
+          ]
+        },
+        
       ]
     },
+    
     {
       id: "kanban-board-2",
-      title: "UI Designing",
+      title: "QUALIFICAÇÃO DE LEADS",
       item: [{
           id: "21",
-          title: "Flat UI Kit Design",
-          border: "secondary"
+          title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Juliana Oliveira <br><strong>TELEFONE:</strong> (11) 234-7626 <br>",
+          border: "warning",
+          dueDate: "Feb 5",
+          comment: "Informação",
+          users: [
+            "../app-assets/images/reach/adwords.png"
+          ]
         },
         {
           id: "22",
-          title: "Drag people onto a card to indicate that.",
-          border: "info",
-          dueDate: "Jan 1",
-          comment: 8,
+          title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Paulo Silva <br><strong>TELEFONE:</strong> (11) 9734-3434 <br>",
+          border: "success",
+          dueDate: "Feb 4",
+          comment: "INTERESSE PRODUTO",
           users: [
-            "../app-assets/images/portrait/small/avatar-s-24.jpg",
-            "../app-assets/images/portrait/small/avatar-s-14.jpg"
+            "../app-assets/images/reach/adwords.png"
           ]
         },
         {
           id: "23",
-          title: "Application Design",
-          border: "warning"
+          title: "<strong>CAMPANHA FACEBOOK</strong> <br> <strong>NOME:</strong> Marcelo D. <br><strong>TELEFONE:</strong> (11) 98997-7676 <br> ",
+          border: "success",
+          dueDate: "Feb 5",
+          comment: "Orçamento",
+          users: [
+            "../app-assets/images/reach/facebook.png"
+          ]
         },
         {
           id: "24",
-          title: "BBQ Logo Design 😱",
-          border: "primary",
-          dueDate: "Jan 6",
-          comment: 10,
-          attachment: 6,
-          badgeContent: "AK",
-          badgeColor: "danger"
-        }
+          title: "<strong>CAMPANHA FACEBOOK</strong> <br> <strong>NOME:</strong> Luciana Almeida <br><strong>TELEFONE:</strong> (11) 98903-3434 <br>",
+
+          border: "success",
+          dueDate: "Feb 6",
+          comment: "Interesse produto",
+          users: [
+            "../app-assets/images/reach/facebook.png"
+          ]
+        },
+
+        {
+          id: "25",
+          title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Ana <br><strong>TELEFONE:</strong> (11) 9839-3434 <br>",
+          border: "danger",
+          comment: "RECLAMAÇÃO",
+          dueDate: "Feb 3",
+          users: [
+            "../app-assets/images/reach/adwords.png"
+          ]
+        },
+
+
       ]
     },
     {
       id: "kanban-board-3",
-      title: "Developing",
+      title: "PROPOSTA ENVIADA",
       item: [{
           id: "31",
-          title: "Database Management System (DBMS) is a collection of programs",
-          border: "warning",
-          dueDate: "Mar 1",
-          comment: 10,
+          title: "<strong>CAMPANHA FACEBOOK</strong> <br> <strong>NOME:</strong> Marcelo D. <br><strong>TELEFONE:</strong> (11) 98997-7676 <br> ",
+          border: "success",
+          dueDate: "Valor da proposta",
+          comment: "R$ 5.000",
+
           users: [
-            "../app-assets/images/portrait/small/avatar-s-20.jpg",
-            "../app-assets/images/portrait/small/avatar-s-22.jpg",
-            "../app-assets/images/portrait/small/avatar-s-13.jpg"
+            "../app-assets/images/reach/facebook.png"
           ]
         },
         {
@@ -134,8 +175,15 @@ $(document).ready(function () {
             "../app-assets/images/portrait/small/avatar-s-2.jpg"
           ]
         }
+
+        
       ]
+
+      
     }
+
+
+    
   ];
 
   // Kanban Board
@@ -219,7 +267,7 @@ $(document).ready(function () {
       if (typeof $(board_item_el).attr("data-dueDate") !== "undefined") {
         board_item_dueDate =
           '<div class="kanban-due-date d-flex align-items-center mr-50">' +
-          '<i class="bx bx-time-five font-size-small mr-25"></i>' +
+          '' +
           '<span class="font-size-small">' +
           $(board_item_el).attr("data-dueDate") +
           "</span>" +
@@ -228,8 +276,8 @@ $(document).ready(function () {
       // check if comment is defined or not
       if (typeof $(board_item_el).attr("data-comment") !== "undefined") {
         board_item_comment =
-          '<div class="kanban-comment d-flex align-items-center mr-50">' +
-          '<i class="bx bx-message font-size-small mr-25"></i>' +
+          '<div class="badge badge-light-info">' +
+          '' +
           '<span class="font-size-small">' +
           $(board_item_el).attr("data-comment") +
           "</span>" +
@@ -275,11 +323,13 @@ $(document).ready(function () {
         ) !== "undefined"
       ) {
         $(board_item_el).append(
+          
           '<div class="kanban-footer d-flex justify-content-between mt-1">' +
           '<div class="kanban-footer-left d-flex">' +
           board_item_dueDate +
-          board_item_comment +
           board_item_attachment +
+       board_item_comment +
+
           "</div>" +
           '<div class="kanban-footer-right">' +
           '<div class="kanban-users">' +
@@ -289,7 +339,8 @@ $(document).ready(function () {
           "</ul>" +
           "</div>" +
           "</div>" +
-          "</div>"
+        "</div>"
+        
         );
       }
       // add Image prepend to 'kanban-Item'
