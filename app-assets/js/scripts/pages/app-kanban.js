@@ -88,7 +88,7 @@ $(document).ready(function () {
       title: "QUALIFICAÇÃO DE LEADS",
       item: [{
           id: "21",
-          title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Juliana Oliveira <br><strong>TELEFONE:</strong> (11) 234-7626 <br>",
+          title: "<strong>Qualificado?</strong> <span style='background-color: #FFE3E4; color: #FF5B5C; font-size: 12px; padding: 5px; border-radius: 3px;'>NÃO</span><hr> <strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Juliana Oliveira <br><strong>TELEFONE:</strong> (11) 234-7626 <br>",
           border: "warning",
           dueDate: "Feb 5",
           comment: "Informação",
@@ -98,7 +98,7 @@ $(document).ready(function () {
         },
         {
           id: "22",
-          title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Paulo Silva <br><strong>TELEFONE:</strong> (11) 9734-3434 <br>",
+          title: "<strong>Qualificado?</strong> <span style='background-color: #DEF9EB; color: #39DA8A;  font-size: 12px; padding: 5px; border-radius: 3px;'>SIM</span><hr><strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Paulo Silva <br><strong>TELEFONE:</strong> (11) 9734-3434 <br>",
           border: "success",
           dueDate: "Feb 4",
           comment: "INTERESSE PRODUTO",
@@ -108,7 +108,7 @@ $(document).ready(function () {
         },
         {
           id: "23",
-          title: "<strong>CAMPANHA FACEBOOK</strong> <br> <strong>NOME:</strong> Marcelo D. <br><strong>TELEFONE:</strong> (11) 98997-7676 <br> ",
+          title: "<strong>Qualificado?</strong> <span style='background-color: #DEF9EB; color: #39DA8A;  font-size: 12px; padding: 5px; border-radius: 3px;'>SIM</span><hr> <strong>CAMPANHA FACEBOOK</strong> <br> <strong>NOME:</strong> Marcelo D. <br><strong>TELEFONE:</strong> (11) 98997-7676 <br> ",
           border: "success",
           dueDate: "Feb 5",
           comment: "Orçamento",
@@ -118,7 +118,7 @@ $(document).ready(function () {
         },
         {
           id: "24",
-          title: "<strong>CAMPANHA FACEBOOK</strong> <br> <strong>NOME:</strong> Luciana Almeida <br><strong>TELEFONE:</strong> (11) 98903-3434 <br>",
+          title: "<strong>Qualificado?</strong> <span style='background-color: #FFE3E4; color: #FF5B5C; font-size: 12px; padding: 5px; border-radius: 3px;'>NÃO</span><hr>  <strong>CAMPANHA FACEBOOK</strong> <br> <strong>NOME:</strong> Luciana Almeida <br><strong>TELEFONE:</strong> (11) 98903-3434 <br>",
 
           border: "success",
           dueDate: "Feb 6",
@@ -138,46 +138,139 @@ $(document).ready(function () {
             "../app-assets/images/reach/adwords.png"
           ]
         },
-
-
       ]
     },
     {
       id: "kanban-board-3",
       title: "PROPOSTA ENVIADA",
-      item: [{
+      
+      item: [
+        {
           id: "31",
           title: "<strong>CAMPANHA FACEBOOK</strong> <br> <strong>NOME:</strong> Marcelo D. <br><strong>TELEFONE:</strong> (11) 98997-7676 <br> ",
           border: "success",
           dueDate: "Valor da proposta",
-          comment: "R$ 5.000",
-
+          comment: "R$ 5.000",          
           users: [
             "../app-assets/images/reach/facebook.png"
           ]
         },
+      
         {
           id: "32",
-          title: "Admin Dashboard 🙂",
+          title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Paulo Silva <br><strong>TELEFONE:</strong> (11) 9734-3434 <br>",
           border: "success",
-          dueDate: "Mar 6",
-          comment: 7,
-          badgeContent: "AD",
-          badgeColor: "primary"
-        },
-        {
-          id: "33",
-          title: "Fix bootstrap progress bar with & issue",
-          border: "primary",
-          dueDate: "Mar 9",
+          dueDate: "Valor da proposta",
+          comment: "R$ 3.000",     
           users: [
-            "../app-assets/images/portrait/small/avatar-s-1.jpg",
-            "../app-assets/images/portrait/small/avatar-s-2.jpg"
+            "../app-assets/images/reach/adwords.png"
+          ]
+        }
+
+        
+                
+      ]
+
+      
+    },
+
+    {
+      id: "kanban-board-4",
+      title: "EM NEGOCIAÇÃO",
+      item: [
+        {
+          id: "34",
+          title: "<strong>CAMPANHA FACEBOOK</strong> <br> <strong>NOME:</strong> Luciana Almeida <br><strong>TELEFONE:</strong> (11) 98903-3434 <br>",
+          border: "warning",
+          dueDate: "Motivo",
+          comment: "Solicitou desconto",
+          users: [
+            "../app-assets/images/reach/facebook.png"
+          ]
+        },
+
+        {
+          id: "39",
+          title: "<strong>CAMPANHA ADWORDS</strong> <br> <strong>NOME:</strong> Natália Mendes <br><strong>TELEFONE:</strong> (11) 2323-3334 <br>",
+          border: "success",
+          dueDate: "Motivo",
+          comment: "AGUARDANDO ASSINATURA",
+          users: [
+            "../app-assets/images/reach/adwords.png"
+          ]
+        }  
+        
+        
+        
+      ]     
+      
+      
+    },
+
+    
+
+    {
+      id: "kanban-board-5",
+      title: "VENDA PERDIDA ❌",
+      item: [
+        {
+          id: "35",
+          title: "<strong>CAMPANHA FACEBOOK</strong> <br> <strong>NOME:</strong> Lucas Diniz <br><strong>TELEFONE:</strong> (11) 9899-76767 <br>",
+          border: "danger",
+          dueDate: "Motivo",
+          comment: "ACHOU CARO",
+          users: [
+            "../app-assets/images/reach/facebook.png"
+          ]
+        },
+
+        {
+          id: "36",
+          title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Maria do Carmo <br><strong>TELEFONE:</strong> (11) 9989-3457 <br>",
+          border: "danger",
+          dueDate: "Motivo",
+          comment: "FORA DA ROTA DE ENTREGA",
+          users: [
+            "../app-assets/images/reach/adwords.png"
+          ]
+        }
+
+        
+      ]   
+      
+    },
+
+    
+    {
+      id: "kanban-board-6",
+      title: "VENDA REALIZADA ✅",
+      item: [
+        {
+          id: "40",
+          title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Bruno Oliveira <br><strong>TELEFONE:</strong> (11) 48675-9887 <br>",
+          border: "success",
+          dueDate: "Motivo",
+          comment: "SERVIÇO DIFERENCIADO",
+          users: [
+            "../app-assets/images/reach/adwords.png"
+          ]
+        },
+
+        {
+          id: "41",
+          title: "<strong>CAMPANHA FACEBOOK</strong> <br> <strong>NOME:</strong> Maria do Carmo <br><strong>TELEFONE:</strong> (11) 9989-3457 <br>",
+          border: "success",
+          dueDate: "Decisor",
+          comment: "PREÇO",
+          users: [
+            "../app-assets/images/reach/facebook.png"
           ]
         }
 
         
       ]
+
+      
 
       
     }
@@ -329,7 +422,6 @@ $(document).ready(function () {
           board_item_dueDate +
           board_item_attachment +
        board_item_comment +
-
           "</div>" +
           '<div class="kanban-footer-right">' +
           '<div class="kanban-users">' +

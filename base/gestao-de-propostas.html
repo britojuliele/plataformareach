@@ -28,6 +28,15 @@
     font-family: open sans !IMPORTANT;
 }
 
+.kanban-title-board {
+    cursor: text;
+    padding: 5px !IMPORTANT;
+    width: 200px;
+    font-size: 15px !IMPORTANT;
+    font-weight: bold !IMPORTANT;
+    font-family: open sans !IMPORTANT;
+}
+
 
 .card-title {
     padding: 0 0.5rem !important;
@@ -280,9 +289,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="main-menu-content mt-2">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" data-icon-style="">
             <li class="nav-item"><a href="index.html"><i class="bx bx-dashboard"></i><span class="menu-title">Visão Geral</span></a></li> </li>
-            <li class="navigation-header">GERAÇÃO DE LEADS</span>
-            </li>
-                  <li class="active site"><a href="geracao-leads-conversao-site.html"><i class="bx bx-sitemap"></i><span class="menu-item">Site/Analytics</span></a></li>
+            <li class="navigation-header">GERAÇÃO DE LEADS</span>            </li>
+            <li class="active gestao-leads"><a href="gestao-de-propostas.html"><i class="bx bx-task"></i><span class="menu-item">Gestão de Leads</span></a></li>
+                  <li class="site"><a href="geracao-leads-conversao-site.html"><i class="bx bx-sitemap"></i><span class="menu-item">Site/Analytics</span></a></li>
                     <li class="google-ads"><a href="geracao-leads-google-ads.html"><i class="bx bx-search"></i><span class="menu-item">Google Ads</span></a></li>
                     <li class="face-insta"><a href="geracao-leads-face-insta.html"><i class="bx bxl-facebook"></i><span class="menu-item">Facebook/Insta Ads</span></a></li>
                     <li class="waze"><a href="geracao-leads-waze-ads.html"><i class="bx bx-navigation"></i><span class="menu-item">Waze Ads</span></a></li>
@@ -350,8 +359,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- END: Main Menu-->
 
 
-   <!-- BEGIN: Content-->
-   <div class="app-content content">
+  <!-- BEGIN: Content-->
+  <div class="app-content content">
     <div class="content-overlay"></div>
     <div class="content-wrapper">
         <div class="content-header row">
@@ -361,8 +370,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="kanban-overlay"></div>
             <section id="kanban-wrapper">
                 <div class="row">
+                    <img class="mb-1 pr-4" src="../app-assets/images/reach/dados-gestao.png" height="100%" width="100%">
+
                     <div class="col-12">
-                       
+                        <button type="button" class="d-none btn btn-primary mb-1" id="add-kanban">
+                            <i class='bx bx-add-to-queue mr-50'></i> Add New Board
+                        </button>
                         <div id="kanban-app"></div>
                     </div>
                 </div>
@@ -371,7 +384,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="kanban-sidebar">
                     <div class="card shadow-none quill-wrapper">
                         <div class="card-header d-flex justify-content-between align-items-center border-bottom px-2 py-1">
-                            <h3 class="card-title">DETALHES DO LEAD</h3>
+                            <h3 class="card-title">CLASSIFICAÇÃO/DETALHES DO LEAD</h3>
                             <button type="button" class="close close-icon">
                                 <i class="bx bx-x"></i>
                             </button>
@@ -381,51 +394,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="card-content">
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label>Card Title</label>
-                                        <input type="text" class="form-control edit-kanban-item-title" placeholder="kanban Title">
+                                        
                                     </div>
                                     <div class="form-group">
-                                        <label>Due Date</label>
-                                        <input type="text" class="form-control edit-kanban-item-date" placeholder="21 August, 2019">
+                                      
                                     </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="form-group">
-                                                <label>Classificar</label>
-                                                <select class="form-control text-white">
-                                                    <option class="bg-primary" selected>Primary</option>
-                                                    <option class="bg-danger">Danger</option>
-                                                    <option class="bg-success">Success</option>
-                                                    <option class="bg-info">Info</option>
-                                                    <option class="bg-warning">Warning</option>
-                                                    <option class="bg-secondary">Secondary</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="form-group">
-                                                <label>Member</label>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="avatar m-0 mr-1">
-                                                        <img src="../app-assets/images/portrait/small/avatar-s-20.jpg" height="36" width="36" alt="avtar img holder">
-                                                    </div>
-                                                    <div class="badge-circle badge-circle-light-secondary">
-                                                        <i class="bx bx-plus"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+   </form>
+
+<div class="row">
+    <div class="col-6">
+        <div class="form-group">
+            <label>Lead Qualificado?</label>
+            <select class="form-control">
+                <option class="">Sim</option>
+                <option class="">Não</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-group">
+            <label> Principal Objeção</label>
+            <select class="form-control">
+                <option class="">Preço</option>
+                <option class="">Não tem o serviço que o cliente procura</option>
+                <option class="">Não é o decisor</option>
+                <option class="">Não tem orçamento para investir</option>
+                <option class="">Falta de confiança</option>
+            </select>
+        </div>
+        </div>
                                     </div>
                                     <div class="form-group">
-                                        <label>Attachment</label>
+                                        <label>Anexar Proposta</label>
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" id="emailAttach">
-                                            <label class="custom-file-label" for="emailAttach">Attach file</label>
+                                            <label class="custom-file-label" for="emailAttach">Fazer upload</label>
                                         </div>
                                     </div>
                                     <!-- Compose mail Quill editor -->
                                     <div class="form-group">
-                                        <label>Comment</label>
+                                        <label>Comentários sobre o lead/proposta</label>
                                         <div class="snow-container border rounded p-1">
                                             <div class="compose-editor"></div>
                                             <div class="d-flex justify-content-end">
@@ -436,7 +444,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                         <button class="ql-underline"></button>
                                                         <button class="ql-link"></button>
                                                         <button class="ql-image"></button>
-                                                        <button class="btn btn-sm btn-primary btn-comment ml-25">Comment</button>
+                                                        <button class="btn btn-sm btn-primary btn-comment ml-25">Comentar</button>
                                                     </span>
                                                 </div>
                                             </div>
@@ -466,7 +474,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </div>
 <!-- END: Content-->
-
     
 
     <div class="sidenav-overlay"></div>
