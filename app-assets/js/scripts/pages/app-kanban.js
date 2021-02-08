@@ -58,27 +58,8 @@ $(document).ready(function () {
           users: [
             "../app-assets/images/reach/adwords.png"
           ]
-        },
-
-        {
-          id: "16",
-          title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Paulo Silva <br><strong>TELEFONE:</strong> (11) 9734-3434 <br>",
-          border: "secondary",
-          dueDate: "Feb 4",
-          users: [
-            "../app-assets/images/reach/adwords.png"
-          ]
-        },
-        
-        {
-          id: "17",
-          title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Ana <br><strong>TELEFONE:</strong> (11) 9839-3434 <br>",
-          border: "secondary",
-          dueDate: "Feb 3",
-          users: [
-            "../app-assets/images/reach/adwords.png"
-          ]
-        },
+        }
+              
         
       ]
     },
@@ -120,7 +101,7 @@ $(document).ready(function () {
           id: "24",
           title: "<strong>Qualificado?</strong> <span style='background-color: #FFE3E4; color: #FF5B5C; font-size: 12px; padding: 5px; border-radius: 3px;'>NÃO</span><hr>  <strong>CAMPANHA FACEBOOK</strong> <br> <strong>NOME:</strong> Luciana Almeida <br><strong>TELEFONE:</strong> (11) 98903-3434 <br>",
 
-          border: "success",
+          border: "danger",
           dueDate: "Feb 6",
           comment: "Interesse produto",
           users: [
@@ -128,16 +109,7 @@ $(document).ready(function () {
           ]
         },
 
-        {
-          id: "25",
-          title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Ana <br><strong>TELEFONE:</strong> (11) 9839-3434 <br>",
-          border: "danger",
-          comment: "RECLAMAÇÃO",
-          dueDate: "Feb 3",
-          users: [
-            "../app-assets/images/reach/adwords.png"
-          ]
-        },
+  
       ]
     },
     {
@@ -274,7 +246,7 @@ $(document).ready(function () {
   // Kanban Board
   var KanbanExample = new jKanban({
     element: "#kanban-wrapper", // selector of the kanban container
-    buttonContent: "+ Add New Item", // text or html content of the board button
+    buttonContent: "+ Cadastrar Lead", // text or html content of the board button
 
     // click on current kanban-item
     click: function (el) {
