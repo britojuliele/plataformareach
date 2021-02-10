@@ -5,6 +5,8 @@
 <head> 
     <style>
 
+span.numero {float: right;}
+
 .badge {
     display: inline-block;
     padding: 5px !IMPORTANT;
@@ -393,7 +395,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="card-content">
                                 <div class="card-body">
                                     <div class="form-group">
-                                        
+                                            <label>Nome do Lead</label>
+                                            <input type="text" class="form-control edit-kanban-item-title" placeholder="Nome">
+
+                                            <label>Telefone</label>
+                                            <input type="text" class="form-control edit-kanban-item-title" placeholder="(00) 0000-0000">
+
+                                            <label>Email</label>
+                                            <input type="text" class="form-control edit-kanban-item-title" placeholder="contato@empresa.com.br">
                                     </div>
                                     <div class="form-group">
                                       
@@ -422,8 +431,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </select>
         </div>
         </div>
-                                    </div>
-                                    <div class="form-group">
+    </div>
+      <a href="https://app.mobcall.com/externo/contato/70bd84999e112415d01799da84a32116:c4ef55195cbf3e647c42408350b129366626602c4697f15f8965363c04224054e279553ee0fc080b6dc013f594f9c3" target="_blank" class="btn btn-primary">Ver linha do tempo do cliente</a>
+
+                                    <div class="form-group mt-1">
                                         <label>Anexar Proposta</label>
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" id="emailAttach">

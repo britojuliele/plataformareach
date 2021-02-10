@@ -35,7 +35,7 @@
   font-weight: normal;
   cursor: text;
   padding: 0 0.5rem;
-  width: 200px;
+  width: 250px;
 }
 
 .kanban-container .kanban-board .kanban-board-header .kanban-title-board:hover, .kanban-container .kanban-board .kanban-board-header .kanban-title-board:focus {

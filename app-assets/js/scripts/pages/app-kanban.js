@@ -18,7 +18,7 @@ $(document).ready(function () {
     
     {
       id: "kanban-board-1",
-      title: "ENTRADA DE LEADS",
+      title: "ENTRADA DE LEADS  <span class='numero'> 5</span>",
       item: [{
           id: "11",
           title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Carlos Silva <br><strong>TELEFONE:</strong> (11) 2309-2323 <br>",
@@ -58,7 +58,18 @@ $(document).ready(function () {
           users: [
             "../app-assets/images/reach/adwords.png"
           ]
+        },
+
+        {
+          id: "16",
+          title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Natalia Dias <br><strong>TELEFONE:</strong> (11) 8788-62125 <br>",
+          border: "secondary",
+          dueDate: "Feb 2",
+          users: [
+            "../app-assets/images/reach/adwords.png"
+          ]
         }
+             
               
         
       ]
@@ -66,13 +77,14 @@ $(document).ready(function () {
     
     {
       id: "kanban-board-2",
-      title: "QUALIFICAÇÃO DE LEADS",
+      title: "QUALIFICAÇÃO DE LEADS  <span class='numero'> 4</span>",
       item: [{
           id: "21",
           title: "<strong>Qualificado?</strong> <span style='background-color: #FFE3E4; color: #FF5B5C; font-size: 12px; padding: 5px; border-radius: 3px;'>NÃO</span><hr> <strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Juliana Oliveira <br><strong>TELEFONE:</strong> (11) 234-7626 <br>",
           border: "warning",
           dueDate: "Feb 5",
           comment: "Informação",
+          attachment: "2/5",   
           users: [
             "../app-assets/images/reach/adwords.png"
           ]
@@ -83,6 +95,7 @@ $(document).ready(function () {
           border: "success",
           dueDate: "Feb 4",
           comment: "INTERESSE PRODUTO",
+          attachment: "4/5",   
           users: [
             "../app-assets/images/reach/adwords.png"
           ]
@@ -93,6 +106,7 @@ $(document).ready(function () {
           border: "success",
           dueDate: "Feb 5",
           comment: "Orçamento",
+          attachment: "3/5", 
           users: [
             "../app-assets/images/reach/facebook.png"
           ]
@@ -104,6 +118,7 @@ $(document).ready(function () {
           border: "danger",
           dueDate: "Feb 6",
           comment: "Interesse produto",
+          attachment: "2/5",   
           users: [
             "../app-assets/images/reach/facebook.png"
           ]
@@ -114,7 +129,7 @@ $(document).ready(function () {
     },
     {
       id: "kanban-board-3",
-      title: "PROPOSTA ENVIADA",
+      title: "PROPOSTA ENVIADA  <span class='numero'> 4</span>",
       
       item: [
         {
@@ -122,7 +137,8 @@ $(document).ready(function () {
           title: "<strong>CAMPANHA FACEBOOK</strong> <br> <strong>NOME:</strong> Marcelo D. <br><strong>TELEFONE:</strong> (11) 98997-7676 <br> ",
           border: "success",
           dueDate: "Valor da proposta",
-          comment: "R$ 5.000",          
+          comment: "R$ 5.000",  
+          attachment: "5/5",         
           users: [
             "../app-assets/images/reach/facebook.png"
           ]
@@ -133,7 +149,8 @@ $(document).ready(function () {
           title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Paulo Silva <br><strong>TELEFONE:</strong> (11) 9734-3434 <br>",
           border: "success",
           dueDate: "Valor da proposta",
-          comment: "R$ 3.000",     
+          comment: "R$ 3.000", 
+          attachment: "5/5",   
           users: [
             "../app-assets/images/reach/adwords.png"
           ]
@@ -144,7 +161,8 @@ $(document).ready(function () {
           title: "<strong>CAMPANHA FACEBOOK</strong> <br> <strong>NOME:</strong> Luciana Almeida <br><strong>TELEFONE:</strong> (11) 98903-3434 <br>",
           border: "warning",
           dueDate: "Objeção",
-          comment: "Solicitou desconto",
+          attachment: "3/5",
+          comment: "Pediu desconto",
           users: [
             "../app-assets/images/reach/facebook.png"
           ]
@@ -155,7 +173,8 @@ $(document).ready(function () {
           title: "<strong>CAMPANHA ADWORDS</strong> <br> <strong>NOME:</strong> Natália Mendes <br><strong>TELEFONE:</strong> (11) 2323-3334 <br>",
           border: "success",
           dueDate: "Objeção",
-          comment: "AGUARDANDO ASSINATURA",
+          attachment: "4/5",
+          comment: "AGUARD. ASSINATURA",
           users: [
             "../app-assets/images/reach/adwords.png"
           ]
@@ -175,7 +194,7 @@ $(document).ready(function () {
 
     {
       id: "kanban-board-5",
-      title: "VENDA PERDIDA ❌",
+      title: "VENDA PERDIDA ❌ <span class='numero'> 2</span>",
       item: [
         {
           id: "35",
@@ -183,6 +202,7 @@ $(document).ready(function () {
           border: "danger",
           dueDate: "Motivo",
           comment: "ACHOU CARO",
+          attachment: "2/5",
           users: [
             "../app-assets/images/reach/facebook.png"
           ]
@@ -193,7 +213,8 @@ $(document).ready(function () {
           title: "<strong>CAMPANHA GOOGLE</strong> <br> <strong>NOME:</strong> Maria do Carmo <br><strong>TELEFONE:</strong> (11) 9989-3457 <br>",
           border: "danger",
           dueDate: "Motivo",
-          comment: "FORA DA ROTA DE ENTREGA",
+          attachment: "2/5",
+          comment: "FORA DA ROTA",
           users: [
             "../app-assets/images/reach/adwords.png"
           ]
@@ -207,7 +228,7 @@ $(document).ready(function () {
     
     {
       id: "kanban-board-6",
-      title: "VENDA REALIZADA ✅",
+      title: "VENDA REALIZADA ✅ <span class='numero'> 2</span>",
       item: [
         {
           id: "40",
@@ -343,9 +364,8 @@ $(document).ready(function () {
       // check if attachment is defined or not
       if (typeof $(board_item_el).attr("data-attachment") !== "undefined") {
         board_item_attachment =
-          '<div class="kanban-attachment d-flex align-items-center">' +
-          '<i class="bx bx-link-alt font-size-small mr-25"></i>' +
-          '<span class="font-size-small">' +
+          '<div class="badge-circle badge-circle-sm badge-circle-light">' +
+                    ' <span class="font-size-small">' +
           $(board_item_el).attr("data-attachment") +
           "</span>" +
           "</div>";
@@ -384,13 +404,13 @@ $(document).ready(function () {
           '<div class="kanban-footer d-flex justify-content-between mt-1">' +
           '<div class="kanban-footer-left d-flex">' +
           board_item_dueDate +
-          board_item_attachment +
        board_item_comment +
           "</div>" +
           '<div class="kanban-footer-right">' +
           '<div class="kanban-users">' +
           board_item_badge +
           '<ul class="list-unstyled users-list m-0 d-flex align-items-center">' +
+          board_item_attachment +
           board_item_users +
           "</ul>" +
           "</div>" +
@@ -457,7 +477,6 @@ $(document).ready(function () {
 
   function dropdown() {
     kanban_dropdown.innerHTML =
-      '<div class="dropdown-toggle cursor-pointer" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bx bx-dots-vertical-rounded"></i></div>' +
       '<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"> ' +
       '<a class="dropdown-item" href="#"><i class="bx bx-link-alt mr-50"></i>Copy Link</a>' +
       '<a class="dropdown-item kanban-delete" id="kanban-delete" href="#"><i class="bx bx-trash mr-50"></i>Delete</a>' +
